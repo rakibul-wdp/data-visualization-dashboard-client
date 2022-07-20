@@ -1,7 +1,11 @@
+import Navbar from './components/Navbar';
+import Drawer from './components/Drawer';
+
 function App() {
   return (
-    <div>
-      <button class='btn btn-primary'>Button</button>
+    <div className=''>
+      <Navbar />
+      <Drawer />
     </div>
   );
 }
