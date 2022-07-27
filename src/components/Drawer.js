@@ -1,11 +1,13 @@
 import React from 'react';
+import Dashboard from './Dashboard';
 
 const Drawer = () => {
   return (
     <div className='drawer drawer-mobile'>
       <input id='dashboard-drawer' type='checkbox' className='drawer-toggle' />
-      <div className='drawer-content flex flex-col items-center justify-center'>
-        {/* <!-- Page content here --> */} <h2>this is dashboard</h2>
+      <div className='drawer-content flex flex-col'>
+        {/*  Page content here  */}
+        <Dashboard />
       </div>
       <div className='drawer-side'>
         <label htmlFor='dashboard-drawer' className='drawer-overlay'></label>

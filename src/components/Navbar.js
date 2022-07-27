@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className='navbar bg-primary px-40'>
-      <label for='dashboard-drawer' class='btn btn-primary drawer-button lg:hidden'>
+      <label htmlFor='dashboard-drawer' className='btn btn-primary drawer-button lg:hidden'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
