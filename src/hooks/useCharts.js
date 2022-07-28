@@ -4,7 +4,7 @@ const useCharts = () => {
   const [charts, setCharts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/chart')
+    fetch('https://limitless-river-80013.herokuapp.com/chart')
       .then((res) => res.json())
       .then((data) => setCharts(data));
   }, []);
