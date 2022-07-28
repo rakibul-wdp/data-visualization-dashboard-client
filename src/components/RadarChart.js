@@ -53,6 +53,13 @@ const RadarChart = () => {
             },
           ],
         }}
+        options={{
+          elements: {
+            line: {
+              borderWidth: 3,
+            },
+          },
+        }}
       />
     </div>
   );

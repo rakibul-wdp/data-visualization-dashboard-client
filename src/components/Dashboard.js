@@ -6,6 +6,7 @@ import HorizontalBarChart from './HorizontalBarChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import RadarChart from './RadarChart';
+import VerticalLineChart from './VerticalLineChart';
 
 const Dashboard = () => {
   return (
@@ -19,6 +20,7 @@ const Dashboard = () => {
       </div>
       <PolarAreaChart />
       <RadarChart />
+      <VerticalLineChart />
     </div>
   );
 };
