@@ -54,16 +54,16 @@ const Navbar = () => {
       </div>
       <div className='navbar-end'>
         {user && (
-          <Link className='font-bold' to=''>
+          <Link className='font-bold text-lg mr-5' to=''>
             {user.displayName}
           </Link>
         )}
         {user ? (
-          <button className='btn btn-ghost font-bold' onClick={logout}>
+          <button className='btn btn-accent font-bold text-lg' onClick={logout}>
             Sign Out
           </button>
         ) : (
-          <Link className='btn btn-ghost font-bold' to='/login'>
+          <Link className='btn btn-accent font-bold text-lg' to='/login'>
             SignUp / Login
           </Link>
         )}
