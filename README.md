@@ -1,6 +1,6 @@
 # This is Data Visualization Dashboard Application.
 
-Data visualization Dashboard Application preview here: [Data Visualization Dashboard](https://github.com/facebook/create-react-app).
+Data visualization Dashboard Application preview here: [Data Visualization Dashboard](https://data-visualization-dashb-b7373.web.app/).
 
 - In this application, I show some data like (Intensity, Likelihood, Relevance, Year, Country, Topics, Region, and City) by the chart to better understand or visualize
 - I filter data in the dashboard in various ways which means you can see data visualize like (end year filter, topics filter, sector filter, region filter, PEST filter, Source filter, SWOT filter, Country, and City).
