@@ -1,7 +1,16 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../firebase.init';
 
 const Navbar = () => {
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+    signOut(auth);
+    // localStorage.removeItem('accessToken');
+  };
   return (
     <div className='navbar bg-primary px-40'>
       <div className='navbar-start'>
@@ -44,7 +53,20 @@ const Navbar = () => {
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn'>Get started</a>
+        {user && (
+          <Link className='font-bold' to=''>
+            {user.displayName}
+          </Link>
+        )}
+        {user ? (
+          <button className='btn btn-ghost font-bold' onClick={logout}>
+            Sign Out
+          </button>
+        ) : (
+          <Link className='btn btn-ghost font-bold' to='/login'>
+            SignUp / Login
+          </Link>
+        )}
         <label htmlFor='dashboard-drawer' className='btn btn-primary drawer-button lg:hidden'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
