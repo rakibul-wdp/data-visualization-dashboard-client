@@ -24,7 +24,7 @@ const Home = () => {
       </div>
       <h1 className='text-center mt-10'>
         <Link to='/dashboard' className='btn btn-primary font-bold text-3xl link'>
-          See All in Dashboard -&gt;
+          See All Charts -&gt;
         </Link>
       </h1>
     </div>

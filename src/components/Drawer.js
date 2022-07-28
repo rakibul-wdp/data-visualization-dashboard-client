@@ -7,7 +7,7 @@ const Drawer = () => {
       <input id='dashboard-drawer' type='checkbox' className='drawer-toggle' />
       <div className='drawer-content flex flex-col'>
         {/*  Page content here  */}
-        <h2 className='text-center font-bold text-2xl text-accent mt-10'>Charts</h2>
+        <h2 className='text-center font-bold text-3xl text-accent mt-10'>Charts</h2>
         <Dashboard />
       </div>
       <div className='drawer-side'>
