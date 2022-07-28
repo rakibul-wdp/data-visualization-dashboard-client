@@ -1,9 +1,11 @@
 import React from 'react';
 import BarChart from './BarChart';
+import PolarAreaChart from './PolarAreaChart';
 import Doughnut from './DoughnutChart';
 import HorizontalBarChart from './HorizontalBarChart';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
+import RadarChart from './RadarChart';
 
 const Dashboard = () => {
   return (
@@ -15,6 +17,8 @@ const Dashboard = () => {
         <Doughnut />
         <PieChart />
       </div>
+      <PolarAreaChart />
+      <RadarChart />
     </div>
   );
 };
